@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+
+<view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
+</view>
+
+<view class="left">
+<text class="left-item">1</text>
+<text class="left-item">2</text>
+<text class="left-item">3</text>
+<text class="left-item">4</text>
+<text class="left-item">5</text>
+<text class="left-item">6</text>
+<text class="left-item">7</text>
+<text class="left-item">8</text>
+<text class="left-item">9</text>
+<text class="left-item">A</text>
+<text class="left-item">B</text>
+<text class="left-item">C</text>
+</view>
+
+
+<view wx:for="{{wlist}}">
+      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100+35}}rpx;top:{{(item.skjc-1)*100+35}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+        <view class="smalltext">{{item.kcmc}}</view>
+      </view>
+    </view>
+
